@@ -1,11 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Rinterio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://kit.fontawesome.com/8e8af374f2.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        manrope: 'Manrope',
+                    },
+                    colors: {
+                        primary: 'rgb(171, 239, 95)',
+                        text73: 'rgb(73, 73, 73)',
+                        text33: 'rgb(33, 33, 33)',
+                        text115: 'rgb(115, 115, 115)',
+                        text28: 'rgb(28, 28, 28)'
+                    }
+                }
+            }
+        }
+    </script>
 </head>
-<body>
-    
+
+<body class="font-manrope">
+    <header class="bg-gradient-to-r from-[rgb(255,255,255)] to-[rgba(255, 255, 255, 0)]">
+        <nav class="py-2 w-11/12 mx-auto max-w-screen-2xl">
+            <div class="navbar">
+                <div class="navbar-start w-5/12">
+                    <a href="#" class="flex items-center space-x-2">
+                        <i class="fa-solid fa-arrow-right bg-primary p-2 rounded-full -rotate-45"></i>
+                        <span class="text-2xl text-text33 lg:text-3xl font-extrabold">Rinterio</span>
+                    </a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 text-text115 hover:text-text73">
+                        <li ><a class="p-3 hover:font-bold hover:bg-transparent">Home</a></li>
+                        <li ><a class="p-3 hover:font-bold hover:bg-transparent">Services</a></li>
+                        <li ><a class="p-3 hover:font-bold hover:bg-transparent">Portfolio</a></li>
+                        <li ><a class="p-3 hover:font-bold hover:bg-transparent">Blogs</a></li>
+                        <li ><a class="p-3 hover:font-bold hover:bg-transparent">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end w-7/12">
+                    <div class="gap-2 items-center hidden md:flex">
+                        <i class="fa-solid fa-magnifying-glass text-text115 border rounded-full p-2 bg-white"></i>
+                        <i class="fa-solid fa-cart-shopping text-text115 border rounded-full p-2 bg-white"></i>
+                        <button class="btn rounded-full bg-primary hover:bg-primary">
+                            <span class="text-text28 text-xl font-extrabold">Book Consult</span>
+                            <i class="fa-solid fa-arrow-right bg-text28 text-white p-2 rounded-full -rotate-45"></i>
+                        </button>
+                    </div>
+                    <div class="dropdown">
+                        <div tabindex="0" class="lg:hidden">
+                            <i class="fa-solid fa-bars bg-white p-3 border rounded-full ml-2"></i>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-25 p-2 shadow right-0 gap-2">
+                            <li><a class="hover:font-bold hover:bg-transparent">Home</a></li>
+                            <li><a class="hover:font-bold hover:bg-transparent">Services</a></li>
+                            <li><a class="hover:font-bold hover:bg-transparent">Portfolio</a></li>
+                            <li><a class="hover:font-bold hover:bg-transparent">Blogs</a></li>
+                            <li><a class="hover:font-bold hover:bg-transparent">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
 </body>
+
 </html>
