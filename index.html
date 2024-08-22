@@ -24,7 +24,12 @@
                         text73: 'rgb(73, 73, 73)',
                         text33: 'rgb(33, 33, 33)',
                         text115: 'rgb(115, 115, 115)',
-                        text28: 'rgb(28, 28, 28)'
+                        text28: 'rgb(28, 28, 28)',
+
+                        card1: 'rgb(231, 193, 211)',
+                        card2: 'rgb(239, 218, 110)',
+                        card3: 'rgb(164, 218, 195)',
+                        card4: 'rgb(119, 170, 234)',
                     },
                     backgroundImage: {
                         thread: 'url(../assets/Vector.png)',
@@ -105,13 +110,15 @@
     </header>
 
     <main>
-        <section class="bg-gray-100 lg:py-10">
+        <section class="bg-gray-100 lg:pt-10">
             <!-- first part -->
-            <div class="lg:bg-thread bg-no-repeat">
-                <div class="flex flex-col lg:flex-row gap-10 justify-between items-center py-10 sm:20 w-11/12 mx-auto max-w-screen-2xl">
+            <div class="lg:bg-thread bg-no-repeat lg:pb-10">
+                <div
+                    class="flex flex-col lg:flex-row gap-10 justify-between items-center py-10 sm:20 w-11/12 mx-auto max-w-screen-2xl">
                     <div class="space-y-5">
                         <div class="flex justify-center lg:justify-start">
-                            <button class="px-3 py-1 rounded-full bg-white text-sm font-medium sm:text-base text-text73">
+                            <button
+                                class="px-3 py-1 rounded-full bg-white text-sm font-medium sm:text-base text-text73">
                                 <i class="fa-solid fa-arrow-right"></i>
                                 <span>About Us</span>
                             </button>
@@ -130,7 +137,8 @@
                                 </div>
                                 <div>
                                     <h4 class="text-base sm:text-lg font-bold">Commercial</h4>
-                                    <p class="text-sm sm:text-base font-medium text-text115">The barn house captivates with
+                                    <p class="text-sm sm:text-base font-medium text-text115">The barn house captivates
+                                        with
                                         its blend of rustic charm and modern.</p>
                                 </div>
                             </div>
@@ -140,18 +148,86 @@
                                 </div>
                                 <div>
                                     <h4 class="text-base sm:text-lg font-bold">Residential</h4>
-                                    <p class="text-sm sm:text-base font-medium text-text115">The barn house captivates with
+                                    <p class="text-sm sm:text-base font-medium text-text115">The barn house captivates
+                                        with
                                         its blend of rustic charm and modern.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="w-full lg:w-auto">
-                        <img class="w-full h-60 object-cover rounded-2xl sm:h-80 lg:h-auto" src="./assets/Rectangle.png" alt="">
+                        <img class="w-full h-60 object-cover rounded-2xl sm:h-80 lg:h-auto" src="./assets/Rectangle.png"
+                            alt="">
                     </div>
                 </div>
             </div>
 
+            <!-- second part -->
+            <div class="bg-white rounded-xl w-11/12 mx-auto text-center">
+                <div class="w-11/12 mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
+                    <div class="py-5 sm:py-10 text-text115 text-sm sm:text-base font-medium">
+                        <i class="fa-regular fa-message text-2xl"></i>
+                        <h2 class="text-3xl text-text73 font-extrabold lg:text-4xl">235+</h2>
+                        <p>Happy Client Review</p>
+                    </div>
+                    <div class="py-5 sm:py-10 text-text115 text-sm sm:text-base font-medium">
+                        <i class="fa-regular fa-building text-2xl"></i>
+                        <h2 class="text-3xl text-text73 font-extrabold lg:text-4xl">50+</h2>
+                        <p>Work Departments</p>
+                    </div>
+                    <div class="py-5 sm:py-10 text-text115 text-sm sm:text-base font-medium">
+                        <i class="fa-solid fa-users text-2xl"></i>
+                        <h2 class="text-3xl text-text73 font-extrabold lg:text-4xl">30k+</h2>
+                        <p>Happy Clients</p>
+                    </div>
+                    <div class="py-5 sm:py-10 text-text115 text-sm sm:text-base font-medium">
+                        <i class="fa-solid fa-user-tie text-2xl"></i>
+                        <h2 class="text-3xl text-text73 font-extrabold lg:text-4xl">307+</h2>
+                        <p>Staff Members</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- third part -->
+             <div class="pb-10 lg:pb-20 space-y-5">
+                <div class="lg:pt-20 pt-10 space-y-3 w-11/12 mx-auto">
+                    <div class="flex justify-center">
+                        <button
+                            class="px-3 py-1 rounded-full bg-white text-sm font-medium sm:text-base text-text73">
+                            <i class="fa-solid fa-arrow-right"></i>
+                            <span>How We Work</span>
+                        </button>
+                    </div>
+                    <div class="text-center space-y-3">
+                        <h2 class="text-text33 text-xl sm:text-3xl lg-text-4xl font-bold">Our Work Process</h2>
+                        <p class="text-sm sm:text-base font-medium text-text73">The barn house captivates with its
+                            blend of rustic charm and <br>
+                            modern sophistication, featuring weathered wood, sleek metal accents.</p>
+                    </div>
+                </div>
+                <div class="w-11/12 mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
+                    <div class="bg-card1 rounded-lg py-5 sm:py-10 p-5 text-text115 text-sm sm:text-base font-medium space-y-2">
+                        <img src="./assets/concept.png" alt="">
+                        <h2 class="text-xl text-text28 font-extrabold">Concept</h2>
+                        <p>The barn house captivates with its blend of rustic charm and modern.</p>
+                    </div>
+                    <div class="bg-card2 rounded-lg py-5 sm:py-10 p-5 text-text115 text-sm sm:text-base font-medium space-y-2">
+                        <img src="./assets/flow-chart.png" alt="">
+                        <h2 class="text-xl text-text28 font-extrabold">Design Process</h2>
+                        <p>The barn house captivates with its blend of rustic charm and modern.</p>
+                    </div>
+                    <div class="bg-card3 rounded-lg py-5 sm:py-10 p-5 text-text115 text-sm sm:text-base font-medium space-y-2">
+                        <img src="./assets/vision.png" alt="">
+                        <h2 class="text-xl text-text28 font-extrabold">Supervision</h2>
+                        <p>The barn house captivates with its blend of rustic charm and modern.</p>
+                    </div>
+                    <div class="bg-card4 rounded-lg py-5 sm:py-10 p-5 text-text115 text-sm sm:text-base font-medium space-y-2">
+                        <img src="./assets/budget-planning.png" alt="">
+                        <h2 class="text-xl text-text28 font-extrabold">Budget Planning</h2>
+                        <p>The barn house captivates with its blend of rustic charm and modern.</p>
+                    </div>
+                 </div>
+             </div>
         </section>
     </main>
 </body>
