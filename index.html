@@ -36,6 +36,7 @@
                     },
                     backgroundImage: {
                         thread: 'url(./assets/Vector.png)',
+                        paper: 'url(./assets/bg.jpg)',
                     }
                 }
             }
@@ -115,9 +116,9 @@
     <main>
         <section class="bg-gray-100 lg:pt-10">
             <!-- first part -->
-            <div class="lg:bg-thread bg-no-repeat lg:pb-10">
+            <div class="w-11/12 mx-auto max-w-screen-2xl lg:bg-thread bg-no-repeat lg:pb-10">
                 <div
-                    class="flex flex-col lg:flex-row gap-10 justify-between items-center py-10 sm:20 w-11/12 mx-auto max-w-screen-2xl">
+                    class="flex flex-col lg:flex-row gap-10 justify-between items-center py-10 sm:20">
                     <div class="space-y-1">
                         <div class="flex justify-center lg:justify-start">
                             <button
@@ -167,7 +168,7 @@
             </div>
 
             <!-- second part -->
-            <div class="bg-white rounded-2xl w-11/12 mx-auto text-center">
+            <div class="bg-white rounded-2xl w-11/12 mx-auto max-w-screen-2xl text-center">
                 <div class="w-11/12 mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
                     <div class="py-5 sm:py-10 text-text115 text-sm sm:text-base font-medium">
                         <i class="fa-regular fa-message text-2xl"></i>
@@ -194,7 +195,7 @@
 
             <!-- third part -->
             <div class="pb-10 lg:pb-20 space-y-3">
-                <div class="lg:pt-20 pt-10 space-y-1 w-11/12 mx-auto">
+                <div class="lg:pt-20 pt-10 space-y-1">
                     <div class="flex justify-center">
                         <button class="px-3 py-1 rounded-full bg-white text-sm font-medium sm:text-base text-text73">
                             <i class="fa-solid fa-arrow-right"></i>
@@ -208,7 +209,7 @@
                             modern sophistication, featuring weathered wood, sleek metal accents.</p>
                     </div>
                 </div>
-                <div class="w-11/12 mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
+                <div class="w-11/12 mx-auto max-w-screen-2xl grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
                     <div
                         class="bg-card1 rounded-xl py-5 sm:py-10 p-5 text-text115 text-sm sm:text-base font-medium space-y-2">
                         <img src="./assets/concept.png" alt="">
@@ -238,7 +239,7 @@
         </section>
 
         <section class="bg-gray-100 lg:bg-transparent pb-10 lg:pb-20">
-            <div class="space-y-1 w-11/12 mx-auto">
+            <div class="space-y-1 w-11/12 mx-auto max-w-screen-2xl">
                 <div class="lg:pt-20 pt-10 text-center pb-5 space-y-1">
                     <div class="flex justify-center">
                         <button
@@ -310,7 +311,7 @@
         </section>
 
         <section class="bg-gray-100">
-            <div class="w-11/12 mx-auto">
+            <div class="w-11/12 mx-auto max-w-screen-2xl">
                 <div class="lg:pt-20 pt-10 text-center pb-5 space-y-1">
                     <div class="flex justify-center">
                         <button
@@ -404,6 +405,43 @@
                             </button>
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="m-1 sm:m-2">
+            <div class="bg-paper bg-cover">
+                <div class="w-11/12 mx-auto max-w-screen-2xl">
+                    <div class="lg:pt-20 pt-10 text-center pb-5 space-y-1">
+                        <div class="flex justify-center">
+                            <button
+                                class="px-3 py-1 rounded-full bg-portfolio text-sm font-medium sm:text-base text-text73">
+                                <i class="fa-solid fa-arrow-right"></i>
+                                <span>Let's Connect</span>
+                            </button>
+                        </div>
+                        <div class="text-center space-y-3">
+                            <h2 class="text-text33 text-xl sm:text-3xl lg-text-4xl font-bold">Let's Discuss Next Project</h2>
+                            <p class="text-sm sm:text-base font-medium text-text73">The barn house captivates with its
+                                blend of rustic charm and <br>
+                                modern sophistication, featuring weathered wood, sleek metal accents.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class=" w-11/12 mx-auto max-w-screen-2xl">
+                    <form class="grid grid-cols-1 sm:grid-cols-2 gap-5 pb-10 lg:pb-20" action="">
+                        <input class="w-full h-12 pl-3 rounded-3xl border-2" type="text" placeholder="First Name*" required/>
+                        <input class="w-full h-12 pl-3 rounded-3xl border-2" type="text" placeholder="Last Name*" required/>
+                        <input class="w-full h-12 pl-3 rounded-3xl border-2" type="text" placeholder="Phone Number*" required/>
+                        <input class="w-full h-12 pl-3 rounded-3xl border-2" type="text" placeholder="Email*" required/>
+                        <textarea class="textarea sm:col-span-2 rounded-3xl textarea-bordered w-full h-52" placeholder="Write You Message Here"></textarea>
+                        <button class="bg-primary rounded-3xl w-full h-12 sm:col-span-2">
+                                <span class="text-text28 sm:text-lg font-extrabold">Read More</span>
+                                <i
+                                    class="fa-solid fa-arrow-right bg-text28 text-gray-200 p-2 rounded-full -rotate-45"></i>
+                        </button>
+                    </form>
                 </div>
             </div>
         </section>
